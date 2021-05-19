@@ -1,0 +1,11 @@
+firewalls:
+  - name: BerlinFW
+    mgmt_ip: 10.11.12.13
+    port: 22
+    vdom: VPN
+    ip_pool: 1022
+  - name: LondonFW
+    mgmt_ip: 14.15.16.17
+    port: 2222
+    vdom: root
+    ip_pool: 510
