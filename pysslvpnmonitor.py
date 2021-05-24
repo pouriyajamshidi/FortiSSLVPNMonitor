@@ -4,11 +4,7 @@ import signal
 import time
 from os import getenv
 from os.path import isfile
-
 from netmiko import ConnectHandler
-from netmiko.ssh_exception import (AuthenticationException,
-                                   NetMikoTimeoutException)
-from paramiko.ssh_exception import SSHException
 from yaml import safe_load
 
 
@@ -127,7 +123,7 @@ class FortigateSSLVPN:
 
             print(f"[+] Currently Connected SSL-VPN Users in {fwname}:")
             print("=" * 85)
-            print("# Username\t\t\t VPN IP\t\t\tPublic IP\t\tSeen")
+            print("# Username\t\t\t VPN IP\t\t\tPublic IP\t\tAppeared")
             print("=" * 85)
 
             for i in sorted_usrdic:
@@ -259,7 +255,7 @@ class FortigateSSLVPN:
         print(f"[+] Connected to {name}")
         print("[+] Sending commands")
 
-        if fwvdom != "root":
+        if fwvdom != "none":
             net_connect.send_command(
                 "config vdom", expect_string=r"#", delay_factor=1)
             net_connect.send_command(

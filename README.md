@@ -20,13 +20,15 @@ pip3 install netmiko
 
 ## Usage
 
+Download all the files in this repository and place them in the same directory.
+
 Populate the `firewalls.yaml` according to your environment:
 
 * name: Firewall name
 * mgmt_ip: management IP address
 * port: SSH port
-* vdom: Vdom name, in case you are not using any, set it as `root`
-* ip_pool: IP address pool size for VPN users
+* vdom: Vdom name, in case you are not using any, set it as `none`
+* ip_pool: IP address pool size for VPN users. E.g. 254 for /24
 
 For FortiOS versions **below 6.4**:
 

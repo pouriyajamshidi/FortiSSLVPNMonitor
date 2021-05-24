@@ -9,3 +9,8 @@ firewalls:
     port: 2222
     vdom: root
     ip_pool: 510
+  - name: SpainFW
+    mgmt_ip: 18.19.20.21
+    port: 22
+    vdom: none
+    ip_pool: 254
