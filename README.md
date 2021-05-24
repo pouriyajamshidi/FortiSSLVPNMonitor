@@ -1,6 +1,6 @@
 # Fortigate SSL VPN
 
-Python script that is written to display your connected SSL VPN users in an systematized manner.
+This program is written for Fortigate firewalls to display connected SSL VPN users in an systematized manner.
 
 ## Features
 
@@ -34,7 +34,7 @@ Populate the `firewalls.yaml` according to your environment:
 * vdom: Vdom name, in case you are not using any, set it as `none`
 * ip_pool: IP address pool size for VPN users. E.g. 254 for /24
 
-### There are two versions of this program available:
+### There are two versions of this program available
 
 * For FortiOS versions **below 6.4**:
 
