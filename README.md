@@ -1,6 +1,6 @@
 # Fortigate SSL VPN
 
-This program is written for Fortigate firewalls to display connected SSL VPN users in an systematized manner.
+This program is written for Fortigate firewalls to display connected SSL VPN users in a systematized manner.
 
 ## Features
 
